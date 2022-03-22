@@ -1,0 +1,17 @@
+
+<div class="h1">
+  <h1>Admin</h1>
+</div>
+<div *ngIf="todos | async" class="parentpro">
+    <div *ngFor="let todo of todos | async" class="child">
+      <div class="product">
+        <h1>{{todo.task}}</h1>
+        <img src="{{todo.image}}" alt="">
+        <h3>{{todo.description}}</h3>
+       <h3> {{todo.price}}</h3>
+        <button (click)="delete(todo)">Delete</button>
+        <button (click)="update(todo)">Edit</button>
+      </div>
+    </div>
+</div>
+<app-todo-form (informParent)="reload($event)"></app-todo-form>

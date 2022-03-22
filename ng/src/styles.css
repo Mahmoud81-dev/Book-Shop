@@ -1,0 +1,32 @@
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(book_stack.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav ul{
+    list-style-type: none;
+    margin-top: 3%;
+    margin-left: 76%;
+
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+}
+nav ul li a:hover{
+  
+    background-color: white;
+    color: brown;
+    border-radius: 5px;
+}

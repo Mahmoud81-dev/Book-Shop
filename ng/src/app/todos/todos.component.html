@@ -1,0 +1,23 @@
+<body>
+  
+  <div class="h1">
+    <h1>Welcome to Book Shop</h1>
+  </div>
+ 
+  
+  <div *ngIf="todos | async" class="parentpro">
+      <div *ngFor="let todo of todos | async" class="child">
+        <div class="product">
+          <h1>{{todo.task}}</h1>
+          <img src="{{todo.image}}" alt="">
+          <h3>{{todo.description}}</h3>
+         <h3> {{todo.price}}</h3>
+          <button (click)="add_cart(todo)">Add-cart</button>
+        </div>
+      </div>
+  </div>
+
+ 
+</body>
+
+

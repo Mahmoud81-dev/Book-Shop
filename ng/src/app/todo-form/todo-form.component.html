@@ -1,0 +1,12 @@
+
+<form action="">
+    <div class="h1form">
+        <h1>To Add New Book</h1>
+    </div>
+   
+    <input [formControl]="task" placeholder="Book Name" required="required">
+    <input [formControl]="description" placeholder="Author Name" required ="required">
+    <input [formControl]="price" placeholder="Price" required="required">
+    <input  [formControl]="image" placeholder="Image" required="required">
+    <button  (click)="add()">ADD</button>
+</form>

@@ -1,0 +1,11 @@
+
+ <div class="h1">
+    <h1>Edit</h1>
+  </div>
+<form action="">   
+    <input [formControl]="task" placeholder="title">
+    <input [formControl]="description" placeholder="Author">
+    <input [formControl]="price" placeholder="price">
+    <input  [formControl]="image" placeholder="image">
+    <button (click)="update()">Save</button>
+</form>
